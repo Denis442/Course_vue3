@@ -1,5 +1,11 @@
 <script>
+
 import Card from "../components/UI/Card.vue"
+
+import Wizard from "../assets/img/wizard.png"
+import Archer from "../assets/img/archer.png"
+import Goblin from "../assets/img/goblin.png"
+
 export default {
 components:{
     Card
@@ -12,24 +18,25 @@ data(){
                 id: 1,
                 title: 'Archer',
                 descr: 'archer archer archer archer',
-                img: require.context('../assets/img/archer.png'),
+                img: Archer,
                 lvl: 4
             },
             {
                 id: 2,
                 title: 'Wizard',
                 descr: 'Wizard Wizard Wizard Wizard',
-                img: '../assets/img/wizard.png',
+                img: Wizard,
                 lvl: 5
             },
             {
                 id: 3,
-                title: 'archer',
+                title: 'Goblin',
                 descr: 'archer archer archer archer',
-                img: '../assets/img/goblin.png',
+                img: Goblin,
                 lvl: 4
             }
-        ]
+        ],
+        image: Wizard
     }
 }
     
@@ -38,8 +45,7 @@ data(){
 <template>
 
     <div class="card__wrapper" v-for="item in items" :key="item.id">
-        <Card :name="`${item.lvl} lvl`" :title="item.title" :imgUrl="item.img">
-         
+        <Card :name="`${item.lvl} lvl`" :title="item.title" :imgUrl="item.img" >
             {{item.descr}}
         </Card>
     </div>
