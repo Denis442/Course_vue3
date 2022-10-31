@@ -11,6 +11,9 @@ export default {
         },
         imgUrl: {
             type: String
+        },
+        link: {
+            type:String
         }
     } 
 }
@@ -25,7 +28,16 @@ export default {
         <span class="card-name">{{name}} </span>
         <span class="card-title">{{title}} </span>
         <span class="card-body">
-            <slot></slot>
+            <slot name="body"></slot>
+            <router-link 
+                v-if="link" 
+                :to="link" 
+                class="link" 
+                style="display:block; margin-top: 16px"
+            >See more</router-link>
+            <slot name="footer"></slot>
+
+
         </span>
     </div>
     

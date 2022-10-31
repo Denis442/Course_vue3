@@ -26,5 +26,10 @@
 </template>
     
 <style lang="scss">
-    
+
+.md-body {
+
+  text-align: left;
+}
+  
 </style>
