@@ -1,9 +1,9 @@
 import { createRouter,createWebHistory,createWebHashHistory } from 'vue-router'
 
-import Home from '../pages/Home.vue'
-import About from '../pages/About.vue'
-import Item from '../pages/_itemAlias.vue'
-import Error from '../pages/404.vue'
+import Home from '@/pages/Home.vue'
+import About from '@/pages/About.vue'
+import Item from '@/pages/_itemAlias.vue'
+import Error from '@/pages/notFound.vue'
 
 
 const router = createRouter({

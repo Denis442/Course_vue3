@@ -1,8 +1,8 @@
-import Wizard from "../assets/img/wizard.png"
-import Archer from "../assets/img/archer.png"
-import Goblin from "../assets/img/goblin.png"
-import barbarian from "../assets/img/barbarian.png"
-import giant from "../assets/img/giant.png"
+import Wizard from "@/assets/img/wizard.png"
+import Archer from "@/assets/img/archer.png"
+import Goblin from "@/assets/img/goblin.png"
+import barbarian from "@/assets/img/barbarian.png"
+import giant from "@/assets/img/giant.png"
 export default [
     {
         id: 1,

@@ -1,13 +1,11 @@
 <script>
-import {links} from "../config"
+import {links} from "@/config"
 export default{
-
 data(){
     return {
         links:links
     }
 }
-    // props: [links]
 }
 </script>
 
@@ -21,7 +19,6 @@ data(){
             </ul>
         </div>
     </footer>
-
 </template>
 
 <style lang="scss">

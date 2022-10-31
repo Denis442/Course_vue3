@@ -1,6 +1,6 @@
 <script>
-import Header from "./components/Header.vue"
-import Footer from "./components/Footer.vue"
+import Header from "@/components/Header.vue"
+import Footer from "@/components/Footer.vue"
 
 export default {
   components: {
@@ -19,9 +19,13 @@ export default {
     
     <Header />
     <div class="wrapper-content">
-      <div class="container">
-        <router-view/>
-      </div>
+      <section>
+        <div class="container">
+          <div class="view-sm isCenter">
+            <router-view/>
+          </div>
+        </div>
+      </section>
     </div>
 
     <Footer />

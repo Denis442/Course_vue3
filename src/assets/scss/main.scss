@@ -81,6 +81,7 @@ section,
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -122,6 +123,12 @@ section,
   &.isCenter {
     margin-left: auto;
     margin-right: auto;
+  }
+  &.isLeft {
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
   }
 }
 

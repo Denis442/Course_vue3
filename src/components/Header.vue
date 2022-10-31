@@ -1,19 +1,15 @@
 <script>
-import {links} from "../config"
+import {links} from "@/config"
 export default{
-
 data(){
     return {
         links:links
     }
 }
-
-    // props: [links]
 }
 </script>
 
 <template>
-  
     <header class="navbar">
         <div class="container">
             <div class="navbar-content">
